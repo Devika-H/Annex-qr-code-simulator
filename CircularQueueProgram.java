@@ -8,17 +8,7 @@ public class CQueueCode {
     rear = -1;
   }
 
-  // Check if the queue is full
-  boolean isFull() {
-    if (front == 0 && rear == SIZE - 1) {
-      return true;
-    }
-    if (front == rear + 1) {
-      return true;
-    }
-    return false;
-  }
-
+  
   // Check if the queue is empty
   boolean isEmpty() {
     if (front == -1)
@@ -39,6 +29,17 @@ public class CQueueCode {
       System.out.println("Inserted " + element);
     }
   }
+  // Check if the queue is full
+  boolean isFull() {
+    if (front == 0 && rear == SIZE - 1) {
+      return true;
+    }
+    if (front == rear + 1) {
+      return true;
+    }
+    return false;
+  }
+
 
   // Removing an element
   int deQueue() {
